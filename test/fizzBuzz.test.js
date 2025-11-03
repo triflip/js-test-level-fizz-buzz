@@ -42,7 +42,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
              */
 
             // Arrange
-
+            let valor_entrada = 5
             // Act
     
             // Assert

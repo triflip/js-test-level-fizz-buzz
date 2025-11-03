@@ -14,9 +14,9 @@ button.addEventListener("click", ()=> {
     const output = document.getElementById("output");
     output.innerHTML = "";
 
-    if( result.status === "success") {
-        renderResult(result.data.result);
-        updateHistory(result.data.number, result.data.result)
+    if( result.status === "ok") {
+        renderResult(result.data.output);
+        updateHistory(result.data.input, result.data.output)
        
     } else {
         renderError(result.message);
