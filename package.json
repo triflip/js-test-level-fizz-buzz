@@ -11,5 +11,17 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triflip/js-test-level-fizz-buzz.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/triflip/js-test-level-fizz-buzz/issues"
+  },
+  "homepage": "https://github.com/triflip/js-test-level-fizz-buzz#readme"
 }
