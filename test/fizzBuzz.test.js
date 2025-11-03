@@ -89,6 +89,17 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
              * When el número es procesado
              * Then se muestra el número ingresado
              */
-        })
+            const valor_entrada = 7;
+            const respuesta_esperada = {
+                status: "ok",
+                message: "El número no es divisible por 3 ni 5",
+                data: {
+                    input: 7,
+                    output:"7",
+                },
+            };
+            const resultado = evaluatedFizzBuzzNumber(valor_entrada);
+            expect(resultado).toEqual(respuesta_esperada);
+        });
     }
 )
