@@ -42,12 +42,22 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
              */
 
             // Arrange
-            let valor_entrada = 5
+            let valor_entrada = 10;
+            let respuesta_esperada = {
+                status: "ok",
+                message: "El número es divisible por 5",
+                data: {
+                    input: 10,
+                    output: "Buzz"
+                }
+            }
             // Act
-    
+            let resultado = evaluatedFizzBuzzNumber(valor_entrada);
             // Assert
-    
-        })
+            expect(typeof resultado.data.input).toBe("number");
+            expect(resultado).toEqual(respuesta_esperada);
+            expect(resultado.data.output).toBe("Buzz");
+        });
 
         test('returns FizzBuzz when multiple of 3 and 5', () => {
             //Gherking test
