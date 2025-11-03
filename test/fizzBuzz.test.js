@@ -67,6 +67,18 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
              * When el número es procesado
              * Then se muestra "FizzBuzz"
              */
+            let valor_entrada = 15;
+            const respuesta_esperada = {
+                status: "ok",
+                message: "El número es divisible por 3 y 5",
+                data: {
+                    input: 15,
+                    output: "FizzBuzz",
+                },
+            };
+            const resultado = evaluatedFizzBuzzNumber(valor_entrada);
+            expect(resultado).toEqual(respuesta_esperada);
+
         })
 
         test('returns number when is not multiple of 3 and 5', () => {
