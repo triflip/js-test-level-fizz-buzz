@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FizzBuzz DOM</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <main>
-        <h1>FizzBuzz</h1>
-
+        <h1 id="title">FizzBuzz</h1>
+        
         <section>
             <label for="userNumber">Enter a number</label><br><br>
             <input type="number" placeholder="e.g. 5" id="userNumber"><br><br>
             <button id="checkBtn">Enter</button>
         </section>
+       <h2>Result</h2>
         <div id="output"></div><br><br>
-       <h2>Historial</h2>
+       <h2>History</h2>
         <div id="history"></div>
     </main>
     <script type="module" src="src/scripts/events.js"></script>
