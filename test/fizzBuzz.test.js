@@ -1,5 +1,6 @@
 import { expect, describe, test } from "@jest/globals";
-import { fizzBuzz } from "./fizzBuzz.js";
+import { evaluatedFizzBuzzNumber } from "../src/scripts/fizzBuzz.js";
+
 
 describe('FizzBuzz test for multiples of 3 and 5', () => {
        
@@ -23,7 +24,7 @@ describe('FizzBuzz test for multiples of 3 and 5', () => {
                 }}
 
             // Act: ejecutar el escenario
-            let resultado = fizzBuzz(valor_entrada);
+            let resultado = evaluatedFizzBuzzNumber(valor_entrada);
         
             // Assert: Comprobar el escenario
             expect(typeof resultado.data.input).toBe("number"); // valida que input sea un número
