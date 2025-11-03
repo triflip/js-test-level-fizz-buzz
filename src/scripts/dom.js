@@ -2,7 +2,6 @@
 export function renderResult(text) {
     const output = document.getElementById("output");
     output.textContent = text;
-    output.className = "success";
 }
 
 export function renderError(msg) {
